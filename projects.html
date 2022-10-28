@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="header_about">
-        <nav>
+        <nav class="nav">
             <a href="index.html" class="logo-header">kasia czar</a>
             <section class="nav_links" id="navLinks">
                 <i class="fa fa_times" onclick="hideMenu()"></i>
@@ -30,33 +30,37 @@
         </nav></div>
 
 
-    div of recent projects, not sure yet if the image itself should be a link, will see later. change the size of the images later
+    <!-- div of recent projects, not sure yet if the image itself should be a link, will see later. change the size of the images later -->
     <div class="projects">
-        <h2>My Recent Projects</h2>
-         <ul>
-            <li>Project 1</li>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui neque voluptates blanditiis voluptas, nulla sint iure rem impedit quasi commodi enim nam eveniet suscipit deleniti quaerat voluptatibus accusantium possimus porro.</p>
-                <img src="\images\femina link screenshot of the website.jpg" alt="a screenshot of the website project 1"/>
-                <p>Here is a <a target="blank" href="URL">link </a> to my first project</p>
-            <li>Project 2</li>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptatibus quos maiores ad, maxime, distinctio ipsa vitae eos odit deserunt, in quo? Doloribus amet eum laudantium. Placeat, veniam? Ut, eum.</p>
-                <img src="\images\Screenshot 2022-01-18 153525.png" alt="a screenshot of the website project 2"/>
-                <p>Here is a <a target="blank" href="URL">link </a> to my second project</p>
-            <li>Project 3</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse possimus nihil debitis voluptatibus hic molestiae itaque incidunt impedit fugiat fuga aut natus quos odio dolores magnam temporibus perspiciatis repellat.</p>
-                <img src="\images\wellness_centre EER diagram.png" alt="a screenshot of the website project 3"/>
-                <p>Here is a <a target="blank" href="URL">link </a> to my third project</p>
+        <h2 class="h2">My Recent Projects</h2>
+         <div class="row">
+            <a href="#project1" class="project-col">
+                <img src="images/2.jpg">
+                <div class="layer">
+                    <h3>PROJECT 1</h3>
+                </div>
+            </a>
+            <a href="#project2" class="project-col">
+                <img src="images/pexels-zetong-li-9985043.jpg">
+                <div class="layer">
+                    <h3>PROJECT 2</h3>
+                </div>
+            </a>
+            <a href="#project3" class="project-col">
+                <img src="images/1.jpg">
+                <div class="layer">
+                    <h3>PROJECT 3</h3>
+                </div>
+            </a>
+         </div>
+    </div>
 
-         </ul>
-
-    </div>-->
-
-    <!-- footer -->
-    <div class="footer">
+     <!-- footer -->
+     <div class="footer">
         <section class="row">
 
             <div class="col">
-                <img src="images/logo.png" class="logo">
+                <p class="logo">kasia czar</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam totam officiis fugit ab, fuga veritatis harum animi sint illum quia, aspernatur autem. Porro in minima voluptate ipsa harum, placeat nam.</p>
             </div>
             
@@ -102,10 +106,10 @@
         <p class="copyright">Kasia Czar © 2022 - All Rights Reserved </p>
 
     </div>
-    
-
-    
-
+     
+     
+     
+     
     <!------JavaScript for Toggle Menu------>
     <script>
 
