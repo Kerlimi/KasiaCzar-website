@@ -18,7 +18,7 @@ body {
   font-size: 30px;
 }
 .logo-header:hover {
-  color: #050505;
+  color: #0c0f16;
   transition: 0.4s;
 }
 
@@ -30,12 +30,18 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
 }
 .nav {
+  width: 100%;
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  transition: background 1s;
+}
+.nav:hover {
+  background: #222d42;
 }
 
 .nav_links {
@@ -57,7 +63,7 @@ body {
   content: "";
   width: 0%;
   height: 2px;
-  background: #0e0f22;
+  background: #111620;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -75,7 +81,9 @@ body {
   text-align: center;
 }
 .text-bio h1 {
-  font-size: 62px;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 600;
 }
 .text-bio p {
   margin: 10px 0 40px;
@@ -94,11 +102,24 @@ body {
 }
 .hero-btn:hover {
   border: 1px solid #aaacc5;
-  background: #0e0f22;
+  background: #111620;
   transition: 1s;
 }
 nav .fa {
   display: none;
+}
+.slide-left {
+  animation: slideleft 2s ease-in-out forwards;
+}
+@keyframes slideleft {
+  0% {
+    transform: translate(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
 }
 @media (max-width: 700px) {
   .text-bio h1 {
@@ -150,7 +171,7 @@ nav .fa {
 
 .project-col {
   flex-basis: 32%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
@@ -160,7 +181,7 @@ nav .fa {
   width: 100%;
   height: 600px;
   display: block;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .layer {
   margin: 100px auto 100px;
@@ -172,7 +193,7 @@ nav .fa {
   left: 0;
   transition: 0.5s;
   cursor: pointer;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .layer:hover {
   background: rgba(23, 23, 24, 0.5);
@@ -366,7 +387,7 @@ hr {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -554,4 +575,7 @@ textarea:valid ~ label {
 form button:hover .fa {
   color: #050505;
   transition: 0.5s;
+}
+.contact-form-icon {
+  margin-right: 0.4em;
 }
