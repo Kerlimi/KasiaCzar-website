@@ -394,7 +394,7 @@ hr {
   background-color: #252729;
 }
 .card.card2 .card_face-front {
-  background-color: #41566b;
+  background-color: #252729;
 }
 
 .card_face-front {
@@ -441,10 +441,10 @@ hr {
 }
 
 .card.card1 .card_face-back {
-  background-color: #64696d;
+  background-color: #252729;
 }
 .card.card2 .card_face-back {
-  background-color: #1b242d;
+  background-color: #252729;
 }
 
 .card_face-back {
@@ -490,22 +490,22 @@ hr {
   pointer-events: all;
 }
 .card_btn .life-btn {
-  background-color: #343c45;
+  background-color: #354768;
   border: none;
 }
 .card_btn .life-btn:hover {
   border: none;
-  background: #5787b7;
+  background: #476192;
   transition: 1s;
 }
 
 .card_btn .professional-btn {
-  background-color: #5787b7;
+  background-color: #354768;
   border: none;
 }
 .card_btn .professional-btn:hover {
   border: none;
-  background: #343c45;
+  background: #476192;
   transition: 1s;
 }
 /* contact form styling*/
