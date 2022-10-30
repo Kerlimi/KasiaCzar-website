@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e68b9062b8.js" crossorigin="anonymous"></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo-header">kasia czar</a>
+            <section class="nav_links" id="navLinks">
+                <i class="fa fa_times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="connect.html">CONNECT</a></li>
+                </ul>
+            </section>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- contact form -->
+    <h2 class="h2">Connect With Me</h2>
+    <div class="contact-form">
+        <form class="connect-form">
+            <div class="input-group">
+                <input type="text" id="contact-form-name" required>
+                <label for="contact-form-name"><i class="fa-solid fa-user contact-form-icon"></i> your name</label>
+            </div>
+            <div class="contact-form-row">
+                <div class="input-group">
+                    <input type="email" id="contact-form-email" required>
+                    <label for="contact-form-email"><i class="fa-solid fa-envelope contact-form-icon"></i> your email address</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="contact-form-confirm-email" required>
+                    <label for="contact-form-confirm-email"><i class="fa-solid fa-envelope contact-form-icon"></i> confirm your email</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <textarea id-="contact-form-message" rows="8" required></textarea>
+                <label for="contact-form-message"><i class="fa-solid fa-message contact-form-icon"></i> your message</label>
+            </div>
+            <button class="contact-form-button" type="submit">SUBMIT  <i class="fa-solid fa-paper-plane contact-form-icon"></i></button>
+        </form>
+        </div>
+    </div>
+
+    
+
+    <!-- footer -->
+    <div class="footer">
+        <section class="row">
+
+            <div class="col">
+                <p class="logo">kasia czar</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam totam officiis fugit ab, fuga veritatis harum animi sint illum quia, aspernatur autem. Porro in minima voluptate ipsa harum, placeat nam.</p>
+            </div>
+            
+            <div class="col">
+                <h3>Email:</h3>
+                <p class="email-id">kasiaczarczynska@gmail.com</p>
+            </div>
+
+            <div class="col">
+                <section>
+                    <h3>Links</h3>
+                    <ul class="footer_links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="connect.html">Connect</a></li>
+                </ul>
+                </section>
+            </div>
+
+            <div class="col">
+                
+                <section class="icons">
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+        
+                </section>
+            </div>
+        </section>
+        <hr>
+        <p class="copyright">Kasia Czar © 2022 - All Rights Reserved </p>
+
+    </div>
+     
+     
+     
+     
+    <!------JavaScript for Toggle Menu------>
+    <!-- <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> -->
+    <script src="main.js"></script>
+</body>
+</html>

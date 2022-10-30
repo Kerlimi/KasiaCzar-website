@@ -1,4 +1,7 @@
-var navLinks = document.getElementById("navLinks");
+let navLinks;
+window.addEventListener("load", () => {
+  navLinks = document.getElementById("navLinks");
+})
 
 function showMenu() {
     navLinks.style.right = "0";
@@ -7,7 +10,7 @@ function hideMenu() {
     navLinks.style.right = "-200px";
 }
 
-const cards = [...document.querySelectorAll(".card_inner")];
+const cards = document.querySelectorAll(".card_inner");
 
 cards.forEach((element) => {
   element.addEventListener("click", clickCard);
